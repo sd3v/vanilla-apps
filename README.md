@@ -2,7 +2,7 @@
 
 Welcome to **Vanilla Apps**, a collection of lightweight, dependency-free web tools designed for simplicity, security, and performance. These apps are built with pure HTML, CSS, and JavaScript—no external libraries or frameworks needed!
 
-The Github Page can be found [here]
+The Github Page can be found [here](https://sd3v.github.io/vanilla-apps/)
 
 ## Features
 
