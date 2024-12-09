@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String En/Decoder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="banner">
+        <h1>String En/Decoder 🍸</h1>
+        <p>Encode and decode strings using Base64, URL encoding, HTML entities, and more.</p>
+    </header>
+
+    <div class="container">
+        <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+
+        <div class="controls">
+            <select id="operation">
+                <option value="base64">Base64</option>
+                <option value="url">URL Encoding</option>
+                <option value="html">HTML Entities</option>
+                <option value="asciihex">ASCII Hex</option>
+                <option value="hex">Hex</option>
+                <option value="octal">Octal</option>
+                <option value="binary">Binary</option>
+                <option value="json">JSON Beautify</option>
+            </select>
+            <button id="encodeButton">Encode</button>
+            <button id="decodeButton">Decode</button>
+        </div>
+
+        <textarea id="outputText" placeholder="Output will appear here..." readonly></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

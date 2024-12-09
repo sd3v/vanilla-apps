@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Tester</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Regex Tester 🔍</h1>
+        <p>Test your regular expressions in real time.</p>
+    </header>
+    <main>
+        <section class="tester">
+            <div class="input-group">
+                <label for="regex">Regular Expression:</label>
+                <input type="text" id="regex" placeholder="Enter your regex (e.g., \\w+)" />
+            </div>
+            <div class="input-group">
+                <label for="flags">Flags:</label>
+                <input type="text" id="flags" placeholder="Enter flags (e.g., g, i, m)" />
+            </div>
+            <div class="input-group">
+                <label for="text">Text to Test:</label>
+                <textarea id="text" rows="5" placeholder="Enter text to test the regex on..."></textarea>
+            </div>
+            <button id="testButton">Test Regex</button>
+        </section>
+        <section class="results">
+            <h2>Results</h2>
+            <div id="output"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

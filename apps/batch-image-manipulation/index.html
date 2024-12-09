@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch Image Processor</title>
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div id="app-container">
+        <h1>Batch Image Processor</h1>
+        <div id="dropZone">
+            Drag & Drop your images here or 
+            <label for="fileInput" style="color: #00205b; cursor: pointer;">click to upload</label>
+            <input type="file" id="fileInput" multiple accept="image/*">
+        </div>
+        <div class="checkbox-group">
+            <label><input type="checkbox" id="resizeCheckbox"> Resize</label>
+            <label><input type="checkbox" id="invertCheckbox"> Invert Colors</label>
+            <label><input type="checkbox" id="grayscaleCheckbox"> Grayscale</label>
+            <label><input type="checkbox" id="flipCheckbox"> Flip Vertically</label>
+            <label><input type="checkbox" id="mirrorCheckbox"> Mirror Horizontally</label>
+        </div>
+        <div id="resizeInputs" style="display: none; text-align: center;">
+            <input type="number" id="resizeWidth" placeholder="Width (px)">
+            <input type="number" id="resizeHeight" placeholder="Height (px)">
+        </div>
+        <div class="action-buttons">
+            <button id="processButton">Process Images</button>
+            <button id="revertButton" style="display: none;">Revert Changes</button>
+            <button id="resetButton" style="display: none;">Reset All Changes</button>
+        </div>
+        <div id="previewContainer"></div>
+        <button id="downloadButton" style="display: none; margin-top: 20px;">Download All Processed Images</button>
+    </div>
+    <footer>
+        Created with ❤️ for batch image editing.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
